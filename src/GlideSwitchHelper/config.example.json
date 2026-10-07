@@ -1,0 +1,21 @@
+{
+  "displays": [
+    {
+      "index": 0,
+      "model": 10098,
+      "note": "H27P3",
+      "vendor": 19815
+    },
+    {
+      "index": 1,
+      "model": 4120,
+      "note": "LU28R55 portrait",
+      "vendor": 19501
+    },
+    {
+      "builtin": true,
+      "index": 2,
+      "note": "Built-in"
+    }
+  ]
+}

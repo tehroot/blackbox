@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Build output (rebuild with the build scripts)
+src/glide-pico/build/
+*.uf2
+GlideSwitchHelper.app/
+GSCap.app/
+
+# Vendor files from Black Box (copyrighted; keep local, do not publish).
+# Their names and versions are listed in docs/vendor-files.md.
+*.zip
+*.exe
+*.chm
+*.doc
+*.bin
+default.ffc

@@ -1,0 +1,341 @@
+=== open /dev/cu.usbmodem00024 22:40:48
+BOOT glide-pico 0.2 dp=GP20 dm=GP21 push=40
+PORT 2 connected
+HID 1532 addr=1 inst=0 vid=21d1 pid=0001 proto=0 desc_len=45 role=glide
+MOUNT 1532 addr=1 vid=21d1 pid=0001
+HID 2052 addr=2 inst=1 vid=3384 pid=0001 proto=1 desc_len=64 role=ignored
+HID 2066 addr=2 inst=2 vid=3384 pid=0001 proto=0 desc_len=34 role=ignored
+HID 2089 addr=2 inst=3 vid=3384 pid=0001 proto=0 desc_len=109 role=keyboard
+MOUNT 2089 addr=2 vid=3384 pid=0001
+HID 2606 addr=3 inst=4 vid=04a5 pid=8002 proto=2 desc_len=69 role=mouse
+HID 2623 addr=3 inst=5 vid=04a5 pid=8002 proto=0 desc_len=63 role=ignored
+HID 2636 addr=3 inst=6 vid=04a5 pid=8002 proto=0 desc_len=48 role=ignored
+MOUNT 2636 addr=3 vid=04a5 pid=8002
+HB 14002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 16002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 18002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 20002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 22002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 24002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 26002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 28002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 30002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 32002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 34002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 36002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 38002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 40002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 42002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 44002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 46002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 48002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 50002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 52002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 54002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 56002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 58002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 60002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 62002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 64002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 66002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 68002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 70002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 72002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 74002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 76002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 78002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 80002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 82002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 84002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 86002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 88002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 90002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 92002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 94002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 96002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 98002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 100002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 102002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 104002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 106002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 108002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 110002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 112002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 114002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 116002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 118002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 120002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 122002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 124002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 126002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 128002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 130002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 132002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 134002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 136002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 138002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 140002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 142002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 144002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 146002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 148002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 150002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 152002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 154002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 156002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 158002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 160002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 162002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 164002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 166002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 168002 port=1 mounted=5 mac=1 cur=-1 glide=0 xing=0 move=0 nopath=0 drops=0/0
+HB 170002 port=1 mounted=5 mac=1 cur=0 glide=328 xing=0 move=0 nopath=0 drops=0/0
+XING 171176 0->1 edge=R exit=(32758,15321) entry=(294,15100)
+MOVE 171176 0->1 steps=1
+HB 172002 port=1 mounted=5 mac=1 cur=1 glide=1208 xing=1 move=1 nopath=0 drops=0/0
+HB 174002 port=1 mounted=5 mac=1 cur=1 glide=1778 xing=1 move=1 nopath=0 drops=0/0
+XING 174099 1->0 edge=L exit=(796,15618) entry=(32709,15400)
+MOVE 174099 1->0 steps=1
+HB 176002 port=1 mounted=5 mac=1 cur=0 glide=2517 xing=2 move=2 nopath=0 drops=0/0
+HB 178002 port=1 mounted=5 mac=1 cur=0 glide=3350 xing=2 move=2 nopath=0 drops=0/0
+HB 180002 port=1 mounted=5 mac=1 cur=0 glide=3611 xing=2 move=2 nopath=0 drops=0/0
+HB 182002 port=1 mounted=5 mac=1 cur=0 glide=3730 xing=2 move=2 nopath=0 drops=0/0
+HB 184002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 186002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 188002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 190002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 192002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 194002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 196002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 198002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 200002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 202002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 204002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 206002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 208002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 210002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 212002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 214002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 216002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 218002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 220002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 222002 port=1 mounted=5 mac=1 cur=0 glide=3731 xing=2 move=2 nopath=0 drops=0/0
+HB 224002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 226002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 228002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 230002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 232002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 234002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 236002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 238002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 240002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 242002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 244002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 246002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 248002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 250002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 252002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 254002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 256002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 258002 port=1 mounted=5 mac=1 cur=0 glide=3741 xing=2 move=2 nopath=0 drops=0/0
+HB 260002 port=1 mounted=5 mac=1 cur=0 glide=4288 xing=2 move=2 nopath=0 drops=0/0
+HB 262002 port=1 mounted=5 mac=1 cur=0 glide=5195 xing=2 move=2 nopath=0 drops=0/0
+HB 264002 port=1 mounted=5 mac=1 cur=0 glide=5752 xing=2 move=2 nopath=0 drops=0/0
+HB 266002 port=1 mounted=5 mac=1 cur=0 glide=5752 xing=2 move=2 nopath=0 drops=0/0
+HB 268002 port=1 mounted=5 mac=1 cur=0 glide=5752 xing=2 move=2 nopath=0 drops=0/0
+HB 270002 port=1 mounted=5 mac=1 cur=0 glide=5752 xing=2 move=2 nopath=0 drops=0/0
+HB 272002 port=1 mounted=5 mac=1 cur=0 glide=5752 xing=2 move=2 nopath=0 drops=0/0
+XING 272636 0->1 edge=R exit=(32550,15022) entry=(140,14700)
+MOVE 272636 0->1 steps=1
+XING 272834 1->0 edge=L exit=(148,18215) entry=(32630,18100)
+MOVE 272834 1->0 steps=1
+XING 273096 0->1 edge=R exit=(32750,21934) entry=(44,21700)
+MOVE 273096 0->1 steps=1
+HB 274002 port=1 mounted=5 mac=1 cur=1 glide=6357 xing=5 move=5 nopath=0 drops=0/0
+HB 276002 port=1 mounted=5 mac=1 cur=1 glide=6827 xing=5 move=5 nopath=0 drops=0/0
+HB 278002 port=1 mounted=5 mac=1 cur=1 glide=7001 xing=5 move=5 nopath=0 drops=0/0
+HB 280002 port=1 mounted=5 mac=1 cur=1 glide=7001 xing=5 move=5 nopath=0 drops=0/0
+HB 282002 port=1 mounted=5 mac=1 cur=1 glide=7536 xing=5 move=5 nopath=0 drops=0/0
+HB 284002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 286002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 288002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 290002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 292002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 294002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 296002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 298002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 300002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 302002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 304002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 306002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 308002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 310002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 312002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 314002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 316002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 318002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 320002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 322002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 324002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 326002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 328002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 330002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 332002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 334002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 336002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 338002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 340002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 342002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 344002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 346002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 348002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 350002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 352002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 354002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 356002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 358002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 360002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 362002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 364002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 366002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 368002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 370002 port=1 mounted=5 mac=1 cur=1 glide=7578 xing=5 move=5 nopath=0 drops=0/0
+HB 372002 port=1 mounted=5 mac=1 cur=1 glide=8144 xing=5 move=5 nopath=0 drops=0/0
+HB 374002 port=1 mounted=5 mac=1 cur=1 glide=8979 xing=5 move=5 nopath=0 drops=0/0
+HB 376002 port=1 mounted=5 mac=1 cur=1 glide=9643 xing=5 move=5 nopath=0 drops=0/0
+HB 378002 port=1 mounted=5 mac=1 cur=1 glide=10417 xing=5 move=5 nopath=0 drops=0/0
+XING 378178 1->0 edge=L exit=(18,14354) entry=(32624,14100)
+MOVE 378178 1->0 steps=1
+XING 379206 0->1 edge=R exit=(32736,5823) entry=(355,5500)
+MOVE 379206 0->1 steps=1
+XING 379406 1->0 edge=L exit=(343,11618) entry=(32060,11400)
+MOVE 379406 1->0 steps=1
+HB 380002 port=1 mounted=5 mac=1 cur=0 glide=11294 xing=8 move=8 nopath=0 drops=0/0
+HB 382002 port=1 mounted=5 mac=1 cur=0 glide=11764 xing=8 move=8 nopath=0 drops=0/0
+XING 382060 0->1 edge=R exit=(32757,16126) entry=(81,16000)
+MOVE 382060 0->1 steps=1
+HB 384002 port=1 mounted=5 mac=1 cur=1 glide=12609 xing=9 move=9 nopath=0 drops=0/0
+HB 386002 port=1 mounted=5 mac=1 cur=1 glide=13413 xing=9 move=9 nopath=0 drops=0/0
+XING 387729 1->0 edge=L exit=(368,13039) entry=(32455,12700)
+MOVE 387729 1->0 steps=1
+HB 388002 port=1 mounted=5 mac=1 cur=0 glide=14088 xing=10 move=10 nopath=0 drops=0/0
+XING 388537 0->1 edge=R exit=(32537,12661) entry=(256,12400)
+MOVE 388537 0->1 steps=1
+XING 389061 1->0 edge=L exit=(345,12586) entry=(32717,12400)
+MOVE 389061 1->0 steps=1
+XING 389989 0->1 edge=R exit=(32481,14223) entry=(17,14100)
+MOVE 389989 0->1 steps=1
+HB 390002 port=1 mounted=5 mac=1 cur=1 glide=14654 xing=13 move=13 nopath=0 drops=0/0
+XING 391494 1->0 edge=L exit=(505,14744) entry=(32592,14700)
+MOVE 391494 1->0 steps=1
+HB 392002 port=1 mounted=5 mac=1 cur=0 glide=15228 xing=14 move=14 nopath=0 drops=0/0
+HB 394002 port=1 mounted=5 mac=1 cur=0 glide=15747 xing=14 move=14 nopath=0 drops=0/0
+HB 396002 port=1 mounted=5 mac=1 cur=0 glide=15747 xing=14 move=14 nopath=0 drops=0/0
+HB 398002 port=1 mounted=5 mac=1 cur=0 glide=15747 xing=14 move=14 nopath=0 drops=0/0
+HB 400002 port=1 mounted=5 mac=1 cur=0 glide=15747 xing=14 move=14 nopath=0 drops=0/0
+XING 401391 0->2 edge=B exit=(24494,32655) entry=(24200,103)
+MOVE 401391 0->2 steps=1
+XING 401617 2->0 edge=T exit=(27558,72) entry=(27500,32756)
+MOVE 401617 2->0 steps=1
+XING 401711 0->2 edge=B exit=(28377,32748) entry=(28200,36)
+MOVE 401711 0->2 steps=1
+HB 402002 port=1 mounted=5 mac=1 cur=2 glide=16254 xing=17 move=17 nopath=0 drops=0/0
+HB 404002 port=1 mounted=5 mac=1 cur=2 glide=17082 xing=17 move=17 nopath=0 drops=0/0
+XING 404964 2->0 edge=T exit=(3027,85) entry=(2600,32703)
+MOVE 404964 2->0 steps=1
+XING 405885 0->1 edge=R exit=(32250,23561) entry=(181,23700)
+MOVE 405885 0->1 steps=1
+HB 406002 port=1 mounted=5 mac=1 cur=1 glide=17627 xing=19 move=19 nopath=0 drops=0/0
+XING 406291 1->0 edge=L exit=(102,27188) entry=(32584,27000)
+MOVE 406291 1->0 steps=1
+HB 408002 port=1 mounted=5 mac=1 cur=0 glide=18137 xing=20 move=20 nopath=0 drops=0/0
+HB 410002 port=1 mounted=5 mac=1 cur=0 glide=18682 xing=20 move=20 nopath=0 drops=0/0
+HB 412002 port=1 mounted=5 mac=1 cur=0 glide=18830 xing=20 move=20 nopath=0 drops=0/0
+HB 414002 port=1 mounted=5 mac=1 cur=0 glide=18967 xing=20 move=20 nopath=0 drops=0/0
+HB 416002 port=1 mounted=5 mac=1 cur=0 glide=18990 xing=20 move=20 nopath=0 drops=0/0
+HB 418002 port=1 mounted=5 mac=1 cur=0 glide=19077 xing=20 move=20 nopath=0 drops=0/0
+HB 420002 port=1 mounted=5 mac=1 cur=0 glide=19375 xing=20 move=20 nopath=0 drops=0/0
+HB 422002 port=1 mounted=5 mac=1 cur=0 glide=19721 xing=20 move=20 nopath=0 drops=0/0
+HB 424002 port=1 mounted=5 mac=1 cur=0 glide=20231 xing=20 move=20 nopath=0 drops=0/0
+XING 424873 0->2 edge=B exit=(21909,32752) entry=(21700,231)
+MOVE 424873 0->2 steps=1
+XING 425606 2->0 edge=T exit=(17263,50) entry=(17000,32454)
+MOVE 425606 2->0 steps=1
+HB 426002 port=1 mounted=5 mac=1 cur=0 glide=21043 xing=22 move=22 nopath=0 drops=0/0
+HB 428002 port=1 mounted=5 mac=1 cur=0 glide=21485 xing=22 move=22 nopath=0 drops=0/0
+HB 430002 port=1 mounted=5 mac=1 cur=0 glide=21585 xing=22 move=22 nopath=0 drops=0/0
+HB 432002 port=1 mounted=5 mac=1 cur=0 glide=21604 xing=22 move=22 nopath=0 drops=0/0
+HB 434002 port=1 mounted=5 mac=1 cur=0 glide=21627 xing=22 move=22 nopath=0 drops=0/0
+HB 436002 port=1 mounted=5 mac=1 cur=0 glide=21627 xing=22 move=22 nopath=0 drops=0/0
+HB 438002 port=1 mounted=5 mac=1 cur=0 glide=21627 xing=22 move=22 nopath=0 drops=0/0
+HB 440002 port=1 mounted=5 mac=1 cur=0 glide=21627 xing=22 move=22 nopath=0 drops=0/0
+HB 442002 port=1 mounted=5 mac=1 cur=0 glide=21627 xing=22 move=22 nopath=0 drops=0/0
+HB 444002 port=1 mounted=5 mac=1 cur=0 glide=21627 xing=22 move=22 nopath=0 drops=0/0
+HB 446002 port=1 mounted=5 mac=1 cur=0 glide=21627 xing=22 move=22 nopath=0 drops=0/0
+HB 448002 port=1 mounted=5 mac=1 cur=0 glide=21627 xing=22 move=22 nopath=0 drops=0/0
+HB 450002 port=1 mounted=5 mac=1 cur=0 glide=21627 xing=22 move=22 nopath=0 drops=0/0
+HB 452002 port=1 mounted=5 mac=1 cur=0 glide=21627 xing=22 move=22 nopath=0 drops=0/0
+HB 454002 port=1 mounted=5 mac=1 cur=0 glide=21627 xing=22 move=22 nopath=0 drops=0/0
+HB 456002 port=1 mounted=5 mac=1 cur=0 glide=21627 xing=22 move=22 nopath=0 drops=0/0
+HB 458002 port=1 mounted=5 mac=1 cur=0 glide=21627 xing=22 move=22 nopath=0 drops=0/0
+HB 460002 port=1 mounted=5 mac=1 cur=0 glide=21627 xing=22 move=22 nopath=0 drops=0/0
+XING 461395 0->1 edge=R exit=(32558,28362) entry=(382,28200)
+MOVE 461395 0->1 steps=1
+HB 462002 port=1 mounted=5 mac=1 cur=1 glide=22031 xing=23 move=23 nopath=0 drops=0/0
+HB 464002 port=1 mounted=5 mac=1 cur=1 glide=22496 xing=23 move=23 nopath=0 drops=0/0
+HB 466002 port=1 mounted=5 mac=1 cur=1 glide=22912 xing=23 move=23 nopath=0 drops=0/0
+HB 468002 port=1 mounted=5 mac=1 cur=1 glide=23693 xing=23 move=23 nopath=0 drops=0/0
+HB 470002 port=1 mounted=5 mac=1 cur=1 glide=24252 xing=23 move=23 nopath=0 drops=0/0
+HB 472002 port=1 mounted=5 mac=1 cur=1 glide=24775 xing=23 move=23 nopath=0 drops=0/0
+XING 472502 1->0 edge=L exit=(323,19474) entry=(32603,19300)
+MOVE 472502 1->0 steps=1
+HB 474002 port=1 mounted=5 mac=1 cur=0 glide=25072 xing=24 move=24 nopath=0 drops=0/0
+HB 476002 port=1 mounted=5 mac=1 cur=0 glide=25072 xing=24 move=24 nopath=0 drops=0/0
+HB 478002 port=1 mounted=5 mac=1 cur=0 glide=25072 xing=24 move=24 nopath=0 drops=0/0
+HB 480002 port=1 mounted=5 mac=1 cur=0 glide=25072 xing=24 move=24 nopath=0 drops=0/0
+HB 482002 port=1 mounted=5 mac=1 cur=0 glide=25072 xing=24 move=24 nopath=0 drops=0/0
+HB 484002 port=1 mounted=5 mac=1 cur=0 glide=25072 xing=24 move=24 nopath=0 drops=0/0
+HB 486002 port=1 mounted=5 mac=1 cur=0 glide=25072 xing=24 move=24 nopath=0 drops=0/0
+HB 488002 port=1 mounted=5 mac=1 cur=0 glide=25380 xing=24 move=24 nopath=0 drops=0/0
+HB 490002 port=1 mounted=5 mac=1 cur=0 glide=25383 xing=24 move=24 nopath=0 drops=0/0
+HB 492002 port=1 mounted=5 mac=1 cur=0 glide=25383 xing=24 move=24 nopath=0 drops=0/0
+HB 494002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 496002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 498002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 500002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 502002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 504002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 506002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 508002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 510002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 512002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 514002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 516002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 518002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 520002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 522002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+HB 524002 port=1 mounted=5 mac=1 cur=0 glide=25546 xing=24 move=24 nopath=0 drops=0/0
+XING 524777 0->1 edge=R exit=(32410,19091) entry=(198,19000)
+MOVE 524777 0->1 steps=1
+HB 526002 port=1 mounted=5 mac=1 cur=1 glide=26051 xing=25 move=25 nopath=0 drops=0/0
+HB 528002 port=1 mounted=5 mac=1 cur=1 glide=26430 xing=25 move=25 nopath=0 drops=0/0
+HB 530002 port=1 mounted=5 mac=1 cur=1 glide=26691 xing=25 move=25 nopath=0 drops=0/0
+HB 532002 port=1 mounted=5 mac=1 cur=1 glide=27399 xing=25 move=25 nopath=0 drops=0/0
+HB 534002 port=1 mounted=5 mac=1 cur=1 glide=28089 xing=25 move=25 nopath=0 drops=0/0
+HB 536002 port=1 mounted=5 mac=1 cur=1 glide=28317 xing=25 move=25 nopath=0 drops=0/0
+HB 538002 port=1 mounted=5 mac=1 cur=1 glide=28715 xing=25 move=25 nopath=0 drops=0/0
+HB 540002 port=1 mounted=5 mac=1 cur=1 glide=29099 xing=25 move=25 nopath=0 drops=0/0
+HB 542002 port=1 mounted=5 mac=1 cur=1 glide=29210 xing=25 move=25 nopath=0 drops=0/0
+HB 544002 port=1 mounted=5 mac=1 cur=1 glide=29280 xing=25 move=25 nopath=0 drops=0/0
+HB 546002 port=1 mounted=5 mac=1 cur=1 glide=29842 xing=25 move=25 nopath=0 drops=0/0
+HB 548002 port=1 mounted=5 mac=1 cur=1 glide=30289 xing=25 move=25 nopath=0 drops=0/0
+HB 550002 port=1 mounted=5 mac=1 cur=1 glide=30567 xing=25 move=25 nopath=0 drops=0/0
+HB 552002 port=1 mounted=5 mac=1 cur=1 glide=30755 xing=25 move=25 nopath=0 drops=0/0
+HB 554002 port=1 mounted=5 mac=1 cur=1 glide=31166 xing=25 move=25 nopath=0 drops=0/0
+HB 556002 port=1 mounted=5 mac=1 cur=1 glide=31166 xing=25 move=25 nopath=0 drops=0/0
+HB 558002 port=1 mounted=5 mac=1 cur=1 glide=31292 xing=25 move=25 nopath=0 drops=0/0
+HB 560002 port=1 mounted=5 mac=1 cur=1 glide=31657 xing=25 move=25 nopath=0 drops=0/0
+HB 562002 port=1 mounted=5 mac=1 cur=1 glide=31700 xing=25 move=25 nopath=0 drops=0/0
+HB 564002 port=1 mounted=5 mac=1 cur=1 glide=32088 xing=25 move=25 nopath=0 drops=0/0
+HB 566002 port=1 mounted=5 mac=1 cur=1 glide=32160 xing=25 move=25 nopath=0 drops=0/0
+HB 568002 port=1 mounted=5 mac=1 cur=1 glide=32160 xing=25 move=25 nopath=0 drops=0/0
