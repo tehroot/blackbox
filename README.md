@@ -7,10 +7,14 @@ says that macOS supports only one monitor.
 
 This repository has two solutions for macOS, and the analysis behind them.
 
-| Solution | For | Software on the Mac | Status (2026-10-06) |
+| Solution | Use it when | Software on the Mac | Status (2026-10-08) |
 |---|---|---|---|
-| **GlideSwitchHelper** | a Mac with admin access | a small app, Input Monitoring and Accessibility permissions | works (personal Mac, 3 displays) |
-| **Pico adapter** | a locked-down Mac | none | works (work Mac, 2 displays; personal Mac, 3 displays) |
+| **GlideSwitchHelper** | you can install an app and grant it permissions | a small app, Input Monitoring and Accessibility permissions | works (tested with 3 displays) |
+| **Pico adapter** | you cannot install the helper on the Mac (no admin rights, or company policy) | none | works (tested with 2 and 3 displays) |
+
+Use the helper where you can. Use the Pico adapter where you cannot install the
+helper: the Mac sees only standard USB HID devices (keyboard and mouse). You can use
+both solutions on the same KVM, one for each Mac.
 
 ## Cause, in short
 
@@ -48,7 +52,7 @@ tools/
   re/disasm_pe.py                 disassembles the 32-bit Windows driver files
   re/strings_utf16.py             finds wide strings in Windows binaries
 data/
-  gscap-capture-2026-10-06.log.gz first capture on the personal Mac (3 displays)
+  gscap-capture-2026-10-06.log.gz first capture on a Mac with 3 displays
   pico-kvm-hid-descriptors.log    all KVM HID descriptors, read through the Pico
   pico-adapter-0.2-crossings.log  Pico log of a test with 22 crossings
   pico-adapter-0.5-flash-log.txt  Pico flash log, boots 1-5 (versions 0.5 and 0.5.1; faults 8 and 9)
@@ -91,4 +95,5 @@ layout to the switch.
   correctly, use the built-in trackpad and run `pkill -x GlideSwitchHelper`.
 - The Pico firmware uses the development USB vendor ID `0xCAFE`. Do not distribute
   devices with it.
-- The work build of the Pico has no serial port. A new flash needs BOOTSEL.
+- The HID-only build of the Pico (`glide_pico_work.uf2`) has no serial port. A new flash
+  needs BOOTSEL.
