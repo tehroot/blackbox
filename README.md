@@ -23,7 +23,8 @@ the display that holds the cursor, so the cursor cannot leave that display.
 - The Pico sits between the KVM and the Mac. It sends absolute X/Y while the index stays
   the same. When the index changes, it sends a relative "push" across the exit edge, so
   macOS moves the cursor onto the next display. It learns the edges from the KVM's
-  crossings.
+  crossings and keeps them in its flash. It also keeps an event log in its flash, which
+  you read on another Mac (`tools/pico-log.sh`).
 
 ## Repository
 
@@ -40,7 +41,9 @@ src/
   gscap/                          HID capture tool (Swift): raw KVM reports + cursor position
   glide-pico/                     Pico firmware (C, pico-sdk + TinyUSB + Pico-PIO-USB)
 tools/
-  setup-pico-toolchain.sh         installs the Pico toolchain into ~/pico (no admin)
+  setup-pico-toolchain.sh         installs the Pico toolchain and picotool into ~/pico (no admin)
+  pico-log.sh                     reads the Pico's flash log (Pico in BOOTSEL mode)
+  pico-log-decode.py              converts a flash log dump to text
   capture/analyze_capture.py      analyzes a GSCap log: index segments and crossings
   re/disasm_pe.py                 disassembles the 32-bit Windows driver files
   re/strings_utf16.py             finds wide strings in Windows binaries
@@ -48,10 +51,11 @@ data/
   gscap-capture-2026-10-06.log.gz first capture on the personal Mac (3 displays)
   pico-kvm-hid-descriptors.log    all KVM HID descriptors, read through the Pico
   pico-adapter-0.2-crossings.log  Pico log of a test with 22 crossings
+  pico-adapter-0.5-flash-log.txt  Pico flash log, boots 1-5 (versions 0.5 and 0.5.1; faults 8 and 9)
 ```
 
-Not in git (see `.gitignore`): build output (`*.uf2`, `*.app`, `src/glide-pico/build/`)
-and the Black Box vendor files.
+Not in git (see `.gitignore`): build output (`*.uf2`, `*.app`, `src/glide-pico/build/`),
+Pico logs (`logs/`), and the Black Box vendor files.
 
 ## Quick start
 

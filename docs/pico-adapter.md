@@ -4,7 +4,7 @@ A Raspberry Pi Pico (RP2040) goes between the KVM computer port and the Mac. The
 sees a plain USB keyboard and mouse. It needs no software, no permissions and no admin
 rights. This is the solution for the locked-down work Mac.
 
-Firmware version: **0.4** (2026-10-06). Source: `src/glide-pico/`.
+Firmware version: **0.5.1** (2026-10-08). Source: `src/glide-pico/`.
 
 ## 1. Hardware
 
@@ -141,39 +141,125 @@ makes. It needs no config for the Mac. A crossing counts only if (version 0.4):
 - the last report before the change is within 3000 units of an edge (exit edge),
 - the first report after the change is within 3000 units of the **opposite** edge.
 
+The Pico tests all four edges, not only the nearest edge of the exit point (version
+0.5.1). At a corner, the nearest edge can be the side edge: exit `(0,399)` and entry
+`(0,32486)` is a crossing of the top edge, although the exit is nearer to the left edge.
+
 A return from another computer enters on the same side as it left, so it fails this
 test and does not create an edge. There is no time limit, because you can stop at an
 edge before you cross it. A new edge between two indexes removes older edges between
 them, and older edges that the new edge replaces.
 
-Constants in `main.c`: `PUSH` 40, `GAP_US` 2000, `EDGE_NEAR` 3000, `MAXIDX` 16.
+### 5.4 Homing (version 0.5)
 
-## 6. Log (development build)
+After a boot, and after a return from another computer, the Pico does not know which
+Mac display holds the cursor. Version 0.4 assumed the display of the last index. When
+this was not true (the edges were lost at power-off, or the trackpad had moved the
+cursor), the first move went the wrong way, and the cursor seemed to wrap on one display.
+
+Version 0.5 puts the cursor on the correct display without this assumption:
+
+1. The learned displays must be one row or one column (for example, one display above
+   the other). If not, the Pico uses the version 0.4 method.
+2. The Pico does n − 1 pushes toward one end of the row or column (n = number of
+   displays). macOS stops the cursor at the outer edge, so after these pushes the cursor
+   is on that end display, from any start display.
+3. The Pico then does one push for each display from that end to the target display.
+4. Each push starts at the centre of the edge, not at the corner, so the two displays
+   touch at that point.
+
+For two displays, one above the other, this is one push. The `HOME` log line shows it.
+If no edges are known, the Pico assumes the display of the first index (`GUESS`), and
+the first crossing teaches the edge.
+
+### 5.5 Flash log and saved edges (version 0.5)
+
+The event lines also go to the Pico's own flash (`flashlog.c`, `flashlog.h`). This works
+on the work Mac too: nothing is added on the Mac side.
+
+- Area: flash offset `0x080000`–`0x200000` (1.5 MiB), 6 slots of 256 KiB. The firmware
+  is about 72 KiB, below `0x080000`. A check at boot turns the log off if the firmware
+  grows into the area.
+- Each boot uses the next slot, so the logs of the 5 previous boots stay. The Pico
+  erases the slot at boot, before USB starts (about 0.6 s).
+- At run time the Pico only programs 256-byte pages. Programming stops all interrupts
+  for about 1 ms (3 ms maximum), so the Pico programs only when the KVM pointer has not
+  moved for 300 ms. A part-filled page is programmed 2 s after its first byte, so a
+  power-off loses at most 2 s of lines.
+- A slot holds about 2,500 crossings. When a slot is full, the lines after that point
+  are lost (`lost=` in the STAT line). The next boot starts a new slot.
+- A UF2 copy does not erase the area: the logs and the edges stay after a new flash.
+
+**Saved edges:** each change of the learned edges writes an `EDGES` line. At boot, the
+Pico reads the last `EDGES` line of the previous boot's slot and restores the edges.
+Then it writes them again at the start of the new slot.
+
+Constants in `main.c`: `PUSH` 40, `GAP_US` 2000, `EDGE_NEAR` 3000, `MAXIDX` 16,
+`STAT_MS` 600000.
+
+## 6. Log
+
+### 6.1 Flash log (both builds)
+
+Read it on the personal Mac. You do not need software or permissions on the work Mac.
+
+1. Disconnect the Pico from the Mac. The KVM cable can stay in the Pico.
+2. Hold BOOTSEL, connect the Pico to the personal Mac, release BOOTSEL.
+3. `tools/pico-log.sh`
+   - It saves the log area to `logs/pico-<date>.bin` and the text to
+     `logs/pico-<date>.txt` (`logs/` is not in git), and prints the text.
+   - Then it restarts the firmware. Disconnect the Pico and connect it to the work Mac.
+   - `--stay` keeps the Pico in BOOTSEL mode, for example to copy a new UF2 next.
+
+`tools/pico-log.sh --clear` erases the log area: all logs **and the saved edges**. Use it
+after a large change of the KVM layout, if the old edges cause wrong moves. Normally
+you do not need it, because a new crossing replaces a conflicting edge.
+
+The script needs picotool with USB support. `tools/setup-pico-toolchain.sh` builds it
+into `~/pico/picotool` (no admin rights).
+
+Timestamps are milliseconds since the boot of that slot. The Pico has no clock. Use
+the `MAC ... suspend` and `MAC ... resume` lines to find sleep periods of the Mac.
+
+### 6.2 Serial log (development build)
 
 Open the serial port, for example with `cat /dev/cu.usbmodem*`. The Pico keeps event
 lines from boot (16 KiB) and sends them again each time a terminal opens the port.
 
+### 6.3 Lines
+
 | Line | Meaning |
 |---|---|
-| `BOOT glide-pico 0.4 ...` | start |
+| `BOOT glide-pico 0.5 seq=n ... restored=k` | start; boot number; number of edge links restored from flash (−1: none) |
+| `EDGES 0T1 1B0` | learned edges: index 1 is past the top edge of index 0, index 0 is past the bottom edge of index 1 |
+| `MAC <ms> mounted / unmounted / suspend / resume` | state of the Mac side (suspend = the Mac sleeps) |
 | `PORT <ms> connected` | KVM detected on D+/D− |
 | `MOUNT` / `HID ... role=...` | KVM devices and the role of each HID interface |
 | `XING <ms> a->b edge=E exit=(x,y) entry=(x,y) gap=<ms>` | crossing; edge learned |
 | `REENTRY ...` | index change that is not a crossing (return from another computer) |
 | `MOVE <ms> a->b steps=n` | display change sent to the Mac |
+| `HOME <ms> ->b steps=n` | homing to the display of index b (section 5.4) |
+| `GUESS <ms> ->b` | no edges known: the Pico assumes that the cursor is on the display of index b |
 | `NOPATH <ms> a->b` | no learned path; no display change sent |
-| `HB <ms> port mounted mac cur glide xing reentry move nopath drops=k/p` | heartbeat every 2 s |
+| `STAT <ms> glide xing reentry home guess move nopath drops flash lost` | counters, every 10 minutes of use (flash = bytes in this slot, lost = bytes not written) |
+| `HB <ms> ...` | heartbeat every 2 s (serial log only) |
 
 To see TinyUSB enumeration details, set `CFG_TUSB_DEBUG` to 2 in `tusb_config.h`.
 
 ## 7. Limits
 
-- **Learned edges are in RAM.** They are lost at power-off. The first crossing of each
-  edge teaches it again, and that crossing works.
-- **First entry after power-on.** The Pico assumes that the cursor is on the display
-  of the first index it sees. If that is not true, the first crossing corrects it.
+- **Homing needs one row or one column.** For other layouts (for example an L shape),
+  the Pico uses the version 0.4 method after a boot or a return: it assumes the last
+  display, and the first crossing corrects a wrong assumption.
+- **No edges at the first boot.** On a new Pico, or after `--clear`, the Pico assumes
+  the display of the first index (`GUESS`) until the first crossing.
 - **Trackpad of the Mac.** If you move the cursor to the other display with the Mac's
-  own trackpad, the KVM mouse stays on that display until the next crossing.
+  own trackpad while the KVM mouse is on this Mac, the KVM mouse stays on that display
+  until the next crossing. After a return from another computer, homing corrects it.
+  A return onto the **same index** as the exit is not a change of index, so it gets no
+  homing.
+- **Homing is visible.** The cursor goes to the centre of an edge for about 4 ms. If the
+  Dock hides automatically on that edge, it can appear.
 - **Display arrangement.** The push goes across the exit edge. The Mac must have the
   next display on that side, and it must touch that part of the edge. The KVM layout
   and the macOS arrangement must agree.
@@ -191,7 +277,7 @@ To see TinyUSB enumeration details, set `CFG_TUSB_DEBUG` to 2 in `tusb_config.h`
 | LED short blink with the KVM connected | No device detected: wiring, VBUS, or the KVM port is not active |
 | LED 5 Hz blink | Enumeration fails: signal quality. Use the development build and set `CFG_TUSB_DEBUG` 2. |
 | Mac does not see the Pico; macOS log has `failed to address device, disabling port` | Port problem. Use a direct port of the Mac, or another cable. |
-| Cursor stays on one display; at an edge it jumps to the other side of the same display | Wrong or missing edge. Version 0.3 and earlier learned false edges at a return from another computer. Disconnect and connect the Pico (clears RAM). With 0.4, check the log for `NOPATH`. |
+| Cursor stays on one display; at an edge it jumps to the other side of the same display | Wrong or missing edge, or the Pico assumed the wrong display. Read the flash log (section 6.1): look for `NOPATH`, `GUESS`, and the `EDGES` lines. Disconnecting the Pico does not clear the edges in version 0.5: use `tools/pico-log.sh --clear`. |
 | Keys do not arrive | Keyboard role not found (`role=ignored` in the log): see the keyboard limit above. |
 
 ## 9. Fault history (2026-10-06)
@@ -204,6 +290,9 @@ To see TinyUSB enumeration details, set `CFG_TUSB_DEBUG` to 2 in `tusb_config.h`
 | 4 | LED did not go on | The device count did not include hub addresses (and an edit made the loop body a comment) | Count up to `CFG_TUH_DEVICE_MAX + CFG_TUH_HUB` |
 | 5 | Pico not found by the Mac, also in BOOTSEL mode | A port of an external hub was disabled by macOS | Use a direct Mac port |
 | 6 | After some use, the cursor stayed on one display | A return from another computer onto a different display was learned as an edge (version 0.3) | Version 0.4: geometric crossing test, conflict removal |
+| 7 | (2026-10-07, work Mac, 0.4) After some starts, the cursor wrapped on one display until the first crossing | The edges were in RAM and lost at power-off. The Pico assumed that the cursor was on the display of the first index. Probable cause, not confirmed with a log. | Version 0.5: edges saved in flash, homing after boot and return, flash log |
+| 8 | (2026-10-08, flash log, 0.5) A crossing near a corner was logged as `REENTRY`, then `NOPATH` because no edge was known yet | The test used only the nearest edge of the exit point. At `(0,399)` that is the left edge, not the top edge. Present since 0.4. Probably the main cause of fault 7. | Version 0.5.1: all four edges are tested |
+| 9 | (2026-10-08, flash log, 0.5) Timestamps started again from 0, and `STAT` lines stopped after 71.6 minutes | `time_us_32() / 1000` wraps at 4,294,967 ms | Version 0.5.1: `to_ms_since_boot()` (wraps after 49.7 days) |
 
 ## 10. Test record
 
@@ -215,9 +304,23 @@ To see TinyUSB enumeration details, set `CFG_TUSB_DEBUG` to 2 in `tusb_config.h`
 - 2026-10-06, work build 0.4 on the work Mac: crossings, returns from the personal Mac
   onto either display, and crossings after the return worked.
 
+- 2026-10-07, version 0.5: built without warnings. The edge restore, homing and
+  report sequences were tested on the Mac with the firmware logic and stub headers
+  (two displays one above the other, three in a row, L shape, a damaged `EDGES` line).
+  `tools/pico-log-decode.py` was tested with a constructed dump.
+- 2026-10-08, version 0.5 on the Pico: flash log read with `tools/pico-log.sh`. One boot
+  of about 2 hours: 56 crossings, 0 lost reports, 0 lost log bytes, 3.5 KB of log. The
+  `EDGES` line was written. The log showed faults 8 and 9. The next boot restored the
+  edges from flash (`restored=2`).
+- 2026-10-08, version 0.5.1: the new crossing test gives the correct edge for all 58
+  index changes of that log, and rejects constructed returns from another computer.
+- 2026-10-08, version 0.5.1 on the Pico: two boots restored the edges (`restored=2`)
+  and did homing at the first report. 28 crossings, all recognized, 0 `NOPATH`. Log:
+  `data/pico-adapter-0.5-flash-log.txt` (boots 1–3: 0.5, boots 4–5: 0.5.1).
+
 ## 11. Possible improvements
 
-- Keep the learned edges in flash, so they are known at power-on.
+- Homing for layouts that are not one row or one column.
 - Strain relief or a case. The solder joints carry the USB signals.
 - Support other keyboards. The Pico cannot copy a descriptor at run time, because the
   Mac enumerates the Pico before the Pico knows the KVM keyboard. A list of known

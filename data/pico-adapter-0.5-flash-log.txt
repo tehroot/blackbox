@@ -1,0 +1,257 @@
+===== boot 1 (slot 0, firmware 0.5, 735 bytes) =====
+BOOT glide-pico 0.5 seq=1 dp=GP20 dm=GP21 push=40 restored=-1
+PORT 847 connected
+MAC 1386 mounted
+HID 2377 addr=1 inst=0 vid=21d1 pid=0001 proto=0 desc_len=45 role=glide
+MOUNT 2377 addr=1 vid=21d1 pid=0001
+HID 2897 addr=2 inst=1 vid=3384 pid=0001 proto=1 desc_len=64 role=ignored
+HID 2911 addr=2 inst=2 vid=3384 pid=0001 proto=0 desc_len=34 role=ignored
+HID 2934 addr=2 inst=3 vid=3384 pid=0001 proto=0 desc_len=109 role=keyboard
+MOUNT 2934 addr=2 vid=3384 pid=0001
+HID 3448 addr=3 inst=4 vid=04a5 pid=8002 proto=2 desc_len=69 role=mouse
+HID 3465 addr=3 inst=5 vid=04a5 pid=8002 proto=0 desc_len=63 role=ignored
+HID 3478 addr=3 inst=6 vid=04a5 pid=8002 proto=0 desc_len=48 role=ignored
+MOUNT 3478 addr=3 vid=04a5 pid=8002
+===== boot 2 (slot 1, firmware 0.5, 6937 bytes) =====
+BOOT glide-pico 0.5 seq=2 dp=GP20 dm=GP21 push=40 restored=-1
+PORT 853 connected
+MAC 1398 mounted
+HID 2383 addr=1 inst=0 vid=21d1 pid=0001 proto=0 desc_len=45 role=glide
+MOUNT 2383 addr=1 vid=21d1 pid=0001
+HID 2903 addr=2 inst=1 vid=3384 pid=0001 proto=1 desc_len=64 role=ignored
+HID 2917 addr=2 inst=2 vid=3384 pid=0001 proto=0 desc_len=34 role=ignored
+HID 2940 addr=2 inst=3 vid=3384 pid=0001 proto=0 desc_len=109 role=keyboard
+MOUNT 2940 addr=2 vid=3384 pid=0001
+HID 3457 addr=3 inst=4 vid=04a5 pid=8002 proto=2 desc_len=69 role=mouse
+HID 3474 addr=3 inst=5 vid=04a5 pid=8002 proto=0 desc_len=63 role=ignored
+HID 3487 addr=3 inst=6 vid=04a5 pid=8002 proto=0 desc_len=48 role=ignored
+MOUNT 3487 addr=3 vid=04a5 pid=8002
+GUESS 74610 ->1
+REENTRY 88926 1->0 edge=L exit=(0,399) entry=(0,32486) gap=2
+NOPATH 88926 1->0
+XING 89234 0->1 edge=B exit=(23373,32734) entry=(23400,22) gap=2
+EDGES 0B1 1T0
+MOVE 89234 0->1 steps=1
+XING 89974 1->0 edge=T exit=(12615,75) entry=(12400,32732) gap=2
+MOVE 89974 1->0 steps=1
+XING 100798 0->1 edge=B exit=(9773,32740) entry=(9500,293) gap=2
+MOVE 100798 0->1 steps=1
+XING 195541 1->0 edge=T exit=(11000,131) entry=(10800,32711) gap=2
+MOVE 195541 1->0 steps=1
+XING 195801 0->1 edge=B exit=(11350,32762) entry=(11100,36) gap=2
+MOVE 195801 0->1 steps=1
+XING 196106 1->0 edge=T exit=(12180,90) entry=(12100,32572) gap=2
+MOVE 196106 1->0 steps=1
+XING 197403 0->1 edge=B exit=(16483,32690) entry=(16300,110) gap=2
+MOVE 197403 0->1 steps=1
+STAT 600000 glide=4440 xing=7 reentry=1 home=0 guess=1 move=7 nopath=1 drops=0/0 flash=1752 lost=0
+XING 1148075 1->0 edge=T exit=(15895,40) entry=(15700,32670) gap=2
+MOVE 1148075 1->0 steps=1
+XING 1148605 0->1 edge=B exit=(15593,32671) entry=(15400,41) gap=2
+MOVE 1148605 0->1 steps=1
+STAT 1200000 glide=7375 xing=9 reentry=1 home=0 guess=1 move=9 nopath=1 drops=0/0 flash=2042 lost=0
+XING 1688993 1->0 edge=T exit=(8564,171) entry=(8100,32723) gap=2
+MOVE 1688993 1->0 steps=1
+XING 1695520 0->1 edge=B exit=(20844,32676) entry=(20700,46) gap=2
+MOVE 1695520 0->1 steps=1
+XING 1697050 1->0 edge=T exit=(15987,78) entry=(15700,32735) gap=2
+MOVE 1697050 1->0 steps=1
+XING 1697416 0->1 edge=B exit=(16053,32687) entry=(15700,57) gap=2
+MOVE 1697416 0->1 steps=1
+STAT 1800000 glide=11551 xing=13 reentry=1 home=0 guess=1 move=13 nopath=1 drops=0/0 flash=2522 lost=0
+XING 2260213 1->0 edge=T exit=(20316,192) entry=(19700,32713) gap=2
+MOVE 2260213 1->0 steps=1
+XING 2261305 0->1 edge=B exit=(5516,32472) entry=(5200,141) gap=2
+MOVE 2261305 0->1 steps=1
+XING 2262623 1->0 edge=T exit=(12430,236) entry=(12100,32757) gap=2
+MOVE 2262623 1->0 steps=1
+XING 2267133 0->1 edge=B exit=(17623,32094) entry=(17400,181) gap=2
+MOVE 2267133 0->1 steps=1
+STAT 2400000 glide=14256 xing=17 reentry=1 home=0 guess=1 move=17 nopath=1 drops=0/0 flash=3008 lost=0
+STAT 3000000 glide=14483 xing=17 reentry=1 home=0 guess=1 move=17 nopath=1 drops=0/0 flash=3112 lost=0
+STAT 3600000 glide=26530 xing=17 reentry=1 home=0 guess=1 move=17 nopath=1 drops=0/0 flash=3216 lost=0
+XING 4095385 1->0 edge=T exit=(32750,0) entry=(32400,32726) gap=2
+MOVE 4095385 1->0 steps=1
+XING 4095471 0->1 edge=B exit=(23613,32732) entry=(23400,6) gap=2
+MOVE 4095471 0->1 steps=1
+STAT 4200000 glide=35298 xing=19 reentry=1 home=0 guess=1 move=19 nopath=1 drops=0/0 flash=3508 lost=0
+XING 4280930 1->0 edge=T exit=(22655,201) entry=(22700,32683) gap=2
+MOVE 4280930 1->0 steps=1
+XING 4287758 0->1 edge=B exit=(8646,32689) entry=(8500,109) gap=2
+MOVE 4287758 0->1 steps=1
+XING 177094 1->0 edge=T exit=(32605,0) entry=(32100,32751) gap=2
+MOVE 177095 1->0 steps=1
+XING 177116 0->1 edge=B exit=(29251,32754) entry=(28900,3) gap=2
+MOVE 177117 0->1 steps=1
+XING 177980 1->0 edge=T exit=(26539,92) entry=(27000,32749) gap=2
+MOVE 177981 1->0 steps=1
+XING 178439 0->1 edge=B exit=(32508,32752) entry=(32400,55) gap=2
+MOVE 178440 0->1 steps=1
+XING 411856 1->0 edge=T exit=(6676,112) entry=(6500,32443) gap=2
+MOVE 411857 1->0 steps=1
+XING 413489 0->1 edge=B exit=(9591,32558) entry=(9500,322) gap=2
+MOVE 413490 0->1 steps=1
+XING 415385 1->0 edge=T exit=(18263,94) entry=(18400,32615) gap=2
+MOVE 415386 1->0 steps=1
+XING 415680 0->1 edge=B exit=(20716,32617) entry=(20300,207) gap=2
+MOVE 415681 0->1 steps=1
+XING 417217 1->0 edge=T exit=(19709,136) entry=(19300,32372) gap=2
+MOVE 417218 1->0 steps=1
+XING 431935 0->1 edge=B exit=(7067,32690) entry=(6800,208) gap=2
+MOVE 431936 0->1 steps=1
+XING 474539 1->0 edge=T exit=(29282,63) entry=(29200,32760) gap=2
+MOVE 474540 1->0 steps=1
+XING 474659 0->1 edge=B exit=(26041,32678) entry=(26000,0) gap=2
+MOVE 474660 0->1 steps=1
+XING 475189 1->0 edge=T exit=(23902,120) entry=(23700,32400) gap=2
+MOVE 475190 1->0 steps=1
+XING 3027439 0->1 edge=B exit=(12661,32069) entry=(12400,156) gap=2
+MOVE 3027439 0->1 steps=1
+XING 3298308 1->0 edge=T exit=(15037,495) entry=(14700,32731) gap=2
+MOVE 3298309 1->0 steps=1
+XING 4149497 0->1 edge=B exit=(13566,32550) entry=(13700,637) gap=2
+MOVE 4149497 0->1 steps=1
+XING 4215292 1->0 edge=T exit=(32620,0) entry=(32100,32741) gap=2
+MOVE 4215292 1->0 steps=1
+XING 4215397 0->1 edge=B exit=(27146,32749) entry=(27000,8) gap=2
+MOVE 4215397 0->1 steps=1
+XING 4222545 1->0 edge=T exit=(11594,175) entry=(11400,32696) gap=2
+MOVE 4222545 1->0 steps=1
+XING 4226216 0->1 edge=B exit=(10888,32767) entry=(10800,187) gap=2
+MOVE 4226216 0->1 steps=1
+XING 157210 1->0 edge=T exit=(23008,7) entry=(23000,32685) gap=2
+MOVE 157211 1->0 steps=1
+XING 157518 0->1 edge=B exit=(19600,32461) entry=(19300,14) gap=2
+MOVE 157518 0->1 steps=1
+XING 1027517 1->0 edge=T exit=(6934,12) entry=(6800,32724) gap=2
+MOVE 1027518 1->0 steps=1
+XING 1034351 0->1 edge=B exit=(12787,32735) entry=(12700,38) gap=2
+MOVE 1034352 0->1 steps=1
+XING 1111078 1->0 edge=T exit=(21173,374) entry=(21000,32610) gap=2
+MOVE 1111079 1->0 steps=1
+XING 1117697 0->1 edge=B exit=(14170,32735) entry=(14100,129) gap=2
+MOVE 1117697 0->1 steps=1
+XING 1599890 1->0 edge=T exit=(23293,161) entry=(23400,32741) gap=2
+MOVE 1599891 1->0 steps=1
+REENTRY 1600092 0->1 edge=B exit=(32596,32721) entry=(32400,390) gap=2
+HOME 1600092 ->1 steps=1
+XING 862048 1->0 edge=T exit=(10802,1128) entry=(10800,32711) gap=2
+MOVE 862048 1->0 steps=1
+XING 862741 0->1 edge=B exit=(14935,32762) entry=(14700,0) gap=2
+MOVE 862741 0->1 steps=1
+XING 1371895 1->0 edge=T exit=(29259,0) entry=(28200,32762) gap=3
+MOVE 1371895 1->0 steps=1
+XING 1390858 0->1 edge=B exit=(19072,31968) entry=(19000,525) gap=2
+MOVE 1390858 0->1 steps=1
+XING 1391456 1->0 edge=T exit=(16159,351) entry=(16000,32003) gap=2
+MOVE 1391456 1->0 steps=1
+XING 1392054 0->1 edge=B exit=(15400,32721) entry=(15100,91) gap=2
+MOVE 1392054 0->1 steps=1
+XING 1392786 1->0 edge=T exit=(15491,203) entry=(15400,32173) gap=2
+MOVE 1392786 1->0 steps=1
+XING 1393158 0->1 edge=B exit=(15136,32283) entry=(15100,3) gap=2
+MOVE 1393158 0->1 steps=1
+===== boot 3 (slot 2, firmware 0.5, 768 bytes) =====
+BOOT glide-pico 0.5 seq=3 dp=GP20 dm=GP21 push=40 restored=2
+EDGES 0B1 1T0
+PORT 851 connected
+MAC 1390 mounted
+HID 2387 addr=1 inst=0 vid=21d1 pid=0001 proto=0 desc_len=45 role=glide
+MOUNT 2388 addr=1 vid=21d1 pid=0001
+HID 2908 addr=2 inst=1 vid=3384 pid=0001 proto=1 desc_len=64 role=ignored
+HID 2925 addr=2 inst=2 vid=3384 pid=0001 proto=0 desc_len=34 role=ignored
+HID 2949 addr=2 inst=3 vid=3384 pid=0001 proto=0 desc_len=109 role=keyboard
+MOUNT 2950 addr=2 vid=3384 pid=0001
+HID 3463 addr=3 inst=4 vid=04a5 pid=8002 proto=2 desc_len=69 role=mouse
+HID 3480 addr=3 inst=5 vid=04a5 pid=8002 proto=0 desc_len=63 role=ignored
+HID 3493 addr=3 inst=6 vid=04a5 pid=8002 proto=0 desc_len=48 role=ignored
+MOUNT 3494 addr=3 vid=04a5 pid=8002
+MAC 149458 suspend 
+===== boot 4 (slot 3, firmware 0.5.1, 1137 bytes) =====
+BOOT glide-pico 0.5.1 seq=4 dp=GP20 dm=GP21 push=40 restored=2
+EDGES 0B1 1T0
+PORT 857 connected
+MAC 1398 mounted
+HID 2387 addr=1 inst=0 vid=21d1 pid=0001 proto=0 desc_len=45 role=glide
+MOUNT 2387 addr=1 vid=21d1 pid=0001
+HID 2907 addr=2 inst=1 vid=3384 pid=0001 proto=1 desc_len=64 role=ignored
+HID 2921 addr=2 inst=2 vid=3384 pid=0001 proto=0 desc_len=34 role=ignored
+HID 2950 addr=2 inst=3 vid=3384 pid=0001 proto=0 desc_len=109 role=keyboard
+MOUNT 2950 addr=2 vid=3384 pid=0001
+HID 3467 addr=3 inst=4 vid=04a5 pid=8002 proto=2 desc_len=69 role=mouse
+HID 3486 addr=3 inst=5 vid=04a5 pid=8002 proto=0 desc_len=63 role=ignored
+HID 3500 addr=3 inst=6 vid=04a5 pid=8002 proto=0 desc_len=48 role=ignored
+MOUNT 3500 addr=3 vid=04a5 pid=8002
+HOME 9935 ->1 steps=1
+XING 10671 1->0 edge=T exit=(28429,27) entry=(28200,32753) gap=2
+MOVE 10671 1->0 steps=1
+XING 10743 0->1 edge=B exit=(19660,32685) entry=(19300,7) gap=2
+MOVE 10743 0->1 steps=1
+XING 11288 1->0 edge=T exit=(32594,0) entry=(32100,32372) gap=2
+MOVE 11288 1->0 steps=1
+XING 12281 0->1 edge=B exit=(28584,32652) entry=(28700,100) gap=2
+MOVE 12281 0->1 steps=1
+===== boot 5 (slot 4, firmware 0.5.1, 2933 bytes) =====
+BOOT glide-pico 0.5.1 seq=5 dp=GP20 dm=GP21 push=40 restored=2
+EDGES 0B1 1T0
+PORT 840 connected
+MAC 1390 mounted
+HID 2370 addr=1 inst=0 vid=21d1 pid=0001 proto=0 desc_len=45 role=glide
+MOUNT 2370 addr=1 vid=21d1 pid=0001
+HID 2890 addr=2 inst=1 vid=3384 pid=0001 proto=1 desc_len=64 role=ignored
+HID 2904 addr=2 inst=2 vid=3384 pid=0001 proto=0 desc_len=34 role=ignored
+HID 2927 addr=2 inst=3 vid=3384 pid=0001 proto=0 desc_len=109 role=keyboard
+MOUNT 2927 addr=2 vid=3384 pid=0001
+HID 3441 addr=3 inst=4 vid=04a5 pid=8002 proto=2 desc_len=69 role=mouse
+HID 3458 addr=3 inst=5 vid=04a5 pid=8002 proto=0 desc_len=63 role=ignored
+HID 3471 addr=3 inst=6 vid=04a5 pid=8002 proto=0 desc_len=48 role=ignored
+MOUNT 3471 addr=3 vid=04a5 pid=8002
+HOME 5617 ->1 steps=1
+XING 7720 1->0 edge=T exit=(10972,423) entry=(10800,32393) gap=2
+MOVE 7720 1->0 steps=1
+XING 8182 0->1 edge=B exit=(11988,32606) entry=(11800,124) gap=2
+MOVE 8182 0->1 steps=1
+XING 26941 1->0 edge=T exit=(30952,4) entry=(30900,32763) gap=2
+MOVE 26941 1->0 steps=1
+XING 27989 0->1 edge=B exit=(31747,32758) entry=(31500,32) gap=2
+MOVE 27989 0->1 steps=1
+XING 28698 1->0 edge=T exit=(30945,19) entry=(30900,32760) gap=2
+MOVE 28698 1->0 steps=1
+XING 29364 0->1 edge=B exit=(30871,32755) entry=(30886,202) gap=2
+MOVE 29364 0->1 steps=1
+XING 30502 1->0 edge=T exit=(26787,8) entry=(26600,32759) gap=2
+MOVE 30502 1->0 steps=1
+XING 31032 0->1 edge=B exit=(26492,32748) entry=(26200,22) gap=2
+MOVE 31032 0->1 steps=1
+XING 31672 1->0 edge=T exit=(27453,10) entry=(27300,32761) gap=2
+MOVE 31672 1->0 steps=1
+XING 32078 0->1 edge=B exit=(27741,32762) entry=(27500,3) gap=2
+MOVE 32078 0->1 steps=1
+XING 35541 1->0 edge=T exit=(30261,3) entry=(30300,32754) gap=2
+MOVE 35541 1->0 steps=1
+XING 36145 0->1 edge=B exit=(30978,32746) entry=(30900,5) gap=2
+MOVE 36145 0->1 steps=1
+XING 37231 1->0 edge=T exit=(29415,0) entry=(29200,32759) gap=2
+MOVE 37231 1->0 steps=1
+XING 37641 0->1 edge=B exit=(29092,32744) entry=(28900,3) gap=2
+MOVE 37641 0->1 steps=1
+XING 38465 1->0 edge=T exit=(27440,9) entry=(27300,32735) gap=2
+MOVE 38465 1->0 steps=1
+XING 38773 0->1 edge=B exit=(26915,32711) entry=(27000,14) gap=2
+MOVE 38773 0->1 steps=1
+XING 39822 1->0 edge=T exit=(2784,7) entry=(2600,32758) gap=2
+MOVE 39822 1->0 steps=1
+XING 40160 0->1 edge=B exit=(2084,32731) entry=(1900,19) gap=2
+MOVE 40160 0->1 steps=1
+XING 40662 1->0 edge=T exit=(1492,20) entry=(1300,32761) gap=2
+MOVE 40662 1->0 steps=1
+XING 41284 0->1 edge=B exit=(1792,32766) entry=(1600,40) gap=2
+MOVE 41284 0->1 steps=1
+XING 41896 1->0 edge=T exit=(4306,24) entry=(4200,32765) gap=2
+MOVE 41896 1->0 steps=1
+XING 42358 0->1 edge=B exit=(5154,32766) entry=(4900,136) gap=2
+MOVE 42358 0->1 steps=1
+XING 42866 1->0 edge=T exit=(7866,22) entry=(7800,32748) gap=2
+MOVE 42866 1->0 steps=1
+XING 43308 0->1 edge=B exit=(7980,32740) entry=(7800,43) gap=2
+MOVE 43308 0->1 steps=1

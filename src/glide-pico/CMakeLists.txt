@@ -19,10 +19,12 @@ foreach(target glide_pico glide_pico_work)
   add_executable(${target}
     src/main.c
     src/usb_descriptors.c
+    src/flashlog.c
   )
   target_include_directories(${target} PRIVATE src)
   target_link_libraries(${target} PRIVATE
     pico_stdlib
+    hardware_flash
     tinyusb_device
     tinyusb_host
     tinyusb_pico_pio_usb
